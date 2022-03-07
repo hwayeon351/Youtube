@@ -17,8 +17,11 @@
 </br>
 
 ## 활용 기술
-* 
-
+* MotionLayout - 홈 화면 하단에 영상 미리보기를 지원하는 PlayView와 플레이어 컨트롤 버튼을 가지는 레이아웃을 MotionLayout의 start 상태로 정의하였습니다. start 상태에서 사용자가 영상을 클릭하거나 MotionLayout을 위로 스와이프하면, end 상태로 바뀌어 PlayView의 width를 화면 크기에 맞춰 키우고 컨트롤 버튼을 숨기며, 영상 리스트를 보여주는 RecyclerView를 하단에 표시하도록 레이아웃을 정의하였습니다.
+* Fragment - MotionLayout을 화면에 표시하는 Fragment를 정의하여 홈 화면의 FrameLayout에 적용하였습니다.
+* Retrofit2 - 영상 리스트를 가지는 mocking data가 담긴 URL로부터 데이터를 가져오기 위해 사용하였습니다.
+* ExoPlayer2 - 동영상을 재생하고 일시정지하기 위해 사용하였습니다.
+* RecyclerView - ListAdapter를 사용하여 DiffUtil을 적용해 영상 리스트를 보여주는 RecyclerView를 구현했습니다.
 </br>
 
 ***
